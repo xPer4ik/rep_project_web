@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Аренда мебели — гибкая подписка и прокат</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Логотип МебельВнаём" width="140">
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-burger" aria-label="Открыть меню" tabindex="0">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" role="navigation" aria-label="Главное меню">
+        <a class="nav-item" href="index.html">Главная</a>
+        <a class="nav-item" href="contacts.html">Контакты</a>
+        <a class="nav-item" href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero is-medium is-light is-bold" id="hero" style="padding-top:4.5rem;">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered is-variable is-8">
+          <div class="column is-7">
+            <h1 class="title is-1">Аренда мебели — удобно, гибко, доступно</h1>
+            <p class="subtitle is-4">Подписка на мебель для квартиры или быстрая аренда для события. Доставка, сборка и гибкие сроки.</p>
+            <div class="buttons">
+              <a class="button is-primary is-medium" href="contacts.html">Узнать цену</a>
+              <a class="button is-light is-medium" href="#services">Наши решения</a>
+            </div>
+          </div>
+          <div class="column is-5 has-text-centered">
+            <img src="assets/hero.webp" alt="Иллюстрация аренды мебели" class="hero-image" width="540" height="360" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <h2 class="title is-3">О проекте</h2>
+          <p>Сервис аренды мебели с фокусом на долгосрочные подписки и краткосрочный прокат для мероприятий. Прозрачные тарифы, калькулятор и поддержка в чате помогают быстро получить решение под задачу.</p>
+          <ul>
+            <li>Подписка для квартир и офисов</li>
+            <li>Прокат для событий</li>
+            <li>Доставка и сборка</li>
+          </ul>
+        </div>
+        <div class="column is-6">
+          <img src="assets/about.webp" alt="Пример комплекта мебели" class="image is-4by3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <h3 class="title is-3 has-text-centered">Наши решения</h3>
+      <div class="columns is-multiline">
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/service-1.webp" alt="Подписка на квартиру — пример комплекта" loading="lazy">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Подписка на квартиру</p>
+              <p class="content">Сменяемый комплект мебели по подписке. Опция страхования и быстрая замена.</p>
+            </div>
+            <footer class="card-footer">
+              <a href="contacts.html" class="card-footer-item">Узнать цену</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/service-2.webp" alt="Прокат мебели для мероприятий" loading="lazy">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Короткий прокат для событий</p>
+              <p class="content">Стулья, столы, декор — на сутки и более. Быстрая доставка и сборка.</p>
+            </div>
+            <footer class="card-footer">
+              <a href="contacts.html" class="card-footer-item">Заказать</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/service-3.webp" alt="Корпоративные решения — офисная мебель" loading="lazy">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Корпоративные решения</p>
+              <p class="content">Мебель для офисов, переговорных и мероприятий. Индивидуальные условия для B2B.</p>
+            </div>
+            <footer class="card-footer">
+              <a href="contacts.html" class="card-footer-item">Связаться</a>
+            </footer>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section has-background-light">
+    <div class="container has-text-centered">
+      <h4 class="title is-4">Хотите расчёт стоимости?</h4>
+      <a class="button is-primary is-large" href="contacts.html">Оставить заявку</a>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <p><strong>МебельВнаём</strong> — аренда мебели и подписки. © <span id="year-inline"></span></p>
+        </div>
+        <div class="column has-text-right">
+          <nav>
+            <a href="index.html">Главная</a> ·
+            <a href="contacts.html">Контакты</a> ·
+            <a href="faq.html">FAQ</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year-inline').textContent = new Date().getFullYear();</script>
+</body>
+</html>

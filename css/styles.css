@@ -1,0 +1,112 @@
+/* Основной шрифт и мелкие настройки */
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Header layout */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Brand */
+.brand img { display: block; }
+
+/* Nav (desktop) */
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Nav items */
+.nav-item {
+  padding: 0.5rem 0.75rem;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+.nav-item.is-active,
+.nav-item:hover {
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+/* Burger (hidden on desktop) */
+.nav-burger {
+  display: none;
+  width: 34px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.nav-burger span {
+  display: block;
+  height: 3px;
+  background: #333;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+/* checkbox hack */
+.nav-toggle { display: none; }
+
+/* Mobile styles */
+@media (max-width: 860px) {
+  .nav { 
+    position: absolute;
+    top: 64px;
+    right: 1rem;
+    background: white;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+    display: none;
+  }
+  .nav-burger { display: block; }
+
+  /* When checkbox checked — show menu */
+  .nav-toggle:checked + .nav-burger + .nav { display: flex; }
+
+  /* Adjust header placement for fixed header and mobile */
+  .header-inner { align-items: center; }
+}
+
+/* Hero image styling */
+.hero-image { border-radius: 8px; max-width:100%; height:auto; }
+
+/* Focus outline for keyboard users */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 3px solid rgba(50,115,220,0.18);
+  outline-offset: 2px;
+}
+
+/* details styling (FAQ) */
+details summary {
+  cursor: pointer;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  list-style: none;
+}
+details[open] summary { color: #0a66c2; }
+details p { margin: .5rem 0 1rem 0; }
+
+/* cards image fit */
+.card-image .image img { object-fit: cover; height: 220px; width: 100%; }
+
+/* small helper */
+.container { max-width: 1100px; margin: 0 auto; }
