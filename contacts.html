@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Контакты — МебельВнаём</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Логотип МебельВнаём" width="140"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-burger" aria-label="Открыть меню" tabindex="0">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" role="navigation">
+        <a class="nav-item" href="index.html">Главная</a>
+        <a class="nav-item is-active" href="contacts.html">Контакты</a>
+        <a class="nav-item" href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top:4.5rem;">
+    <section class="section">
+      <div class="container">
+        <h2 class="title is-2">Оставьте заявку</h2>
+        <div class="columns">
+          <div class="column is-6">
+            <form action="#" method="post" novalidate>
+              <div class="field">
+                <label class="label" for="name">Имя</label>
+                <div class="control">
+                  <input id="name" name="name" class="input" type="text" placeholder="Ваше имя" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <div class="control">
+                  <input id="email" name="email" class="input" type="email" placeholder="example@email.com" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="subject">Тема</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select id="subject" name="subject" required>
+                      <option value="" disabled selected>Выберите тему</option>
+                      <option>Подписка для квартиры</option>
+                      <option>Прокат для мероприятия</option>
+                      <option>Бизнес / Корпоратив</option>
+                      <option>Другое</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="message">Сообщение</label>
+                <div class="control">
+                  <textarea id="message" name="message" class="textarea" rows="5" placeholder="Кратко опишите запрос" required></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input id="consent" type="checkbox" required>
+                    Соглашаюсь на обработку персональных данных
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary" type="submit">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="column is-6">
+            <h3 class="title is-4">Контакты</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+            <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+            <p><i class="fas fa-envelope"></i> info@mebelvnaem.example</p>
+
+            <figure class="image is-16by9" style="margin-top:1rem;">
+              <img src="assets/office.webp" alt="Офис и склад компании" loading="lazy">
+            </figure>
+
+            <hr>
+            <h4 class="title is-5">Часы работы</h4>
+            <p>Пн–Пт 09:00–19:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column"><strong>МебельВнаём</strong> © 2026</div>
+        <div class="column has-text-right">
+          <nav>
+            <a href="index.html">Главная</a> ·
+            <a href="contacts.html">Контакты</a> ·
+            <a href="faq.html">FAQ</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
